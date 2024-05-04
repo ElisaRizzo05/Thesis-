@@ -1,0 +1,760 @@
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 47338.4 kH/s (88.32ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:34:59 2023
+Stopped: Thu Sep 07 14:35:15 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 45845.6 kH/s (91.22ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:35:17 2023
+Stopped: Thu Sep 07 14:35:25 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 44298.7 kH/s (94.36ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:35:26 2023
+Stopped: Thu Sep 07 14:35:34 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 43687.2 kH/s (95.71ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:35:35 2023
+Stopped: Thu Sep 07 14:35:43 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 43486.0 kH/s (96.17ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:35:44 2023
+Stopped: Thu Sep 07 14:35:52 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 43030.0 kH/s (97.18ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:35:53 2023
+Stopped: Thu Sep 07 14:36:01 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 43076.4 kH/s (97.06ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:36:02 2023
+Stopped: Thu Sep 07 14:36:11 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 42505.9 kH/s (98.38ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:36:11 2023
+Stopped: Thu Sep 07 14:36:20 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 42594.3 kH/s (98.15ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:36:20 2023
+Stopped: Thu Sep 07 14:36:28 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 42608.2 kH/s (98.14ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:36:29 2023
+Stopped: Thu Sep 07 14:36:37 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 42563.9 kH/s (98.25ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:36:38 2023
+Stopped: Thu Sep 07 14:36:46 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 43086.8 kH/s (97.07ms) @ Accel:1024 Loops:256 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:36:49 2023
+Stopped: Thu Sep 07 14:36:58 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 42718.9 kH/s (97.89ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:36:58 2023
+Stopped: Thu Sep 07 14:37:07 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 42433.9 kH/s (98.54ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:37:07 2023
+Stopped: Thu Sep 07 14:37:16 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 40405.6 kH/s (103.50ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:37:16 2023
+Stopped: Thu Sep 07 14:37:25 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 40422.2 kH/s (51.55ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:37:25 2023
+Stopped: Thu Sep 07 14:37:33 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 40948.8 kH/s (50.93ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:37:34 2023
+Stopped: Thu Sep 07 14:37:42 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 41675.6 kH/s (50.05ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:37:43 2023
+Stopped: Thu Sep 07 14:37:51 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 41563.1 kH/s (100.62ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:37:51 2023
+Stopped: Thu Sep 07 14:38:00 2023
+
+C:\Users\12riz\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 17400
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+hipFuncGetAttribute is missing from HIP shared library.
+
+OpenCL API (OpenCL 2.1 AMD-APP (3075.13)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon(TM) Graphics, skipped
+* Device #2: AMD Radeon(TM) Graphics, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: AMD Ryzen 7 4800H with Radeon Graphics, 7838/15741 MB (1967 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+----------------------------
+* Hash-Mode 17400 (SHA3-256)
+----------------------------
+
+Speed.#3.........: 41340.0 kH/s (50.46ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+Started: Thu Sep 07 14:38:00 2023
+Stopped: Thu Sep 07 14:38:08 2023
