@@ -1,0 +1,115 @@
+CUDA API (CUDA 11.4)
+====================
+* Device #1: NVIDIA GeForce RTX 3080 Ti, 11102/12288 MB, 80MCU
+* Device #2: NVIDIA GeForce RTX 3080 Ti, 11102/12288 MB, 80MCU
+* Device #3: NVIDIA GeForce RTX 3080 Ti, 11102/12288 MB, 80MCU
+* Device #4: NVIDIA GeForce RTX 3080 Ti, 11102/12288 MB, 80MCU
+* Device #5: NVIDIA GeForce RTX 3080 Ti, 11102/12288 MB, 80MCU
+* Device #6: NVIDIA GeForce RTX 3080 Ti, 11102/12288 MB, 80MCU
+
+OpenCL API (OpenCL 3.0 CUDA 11.4.94) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #7: NVIDIA GeForce RTX 3080 Ti, skipped
+* Device #8: NVIDIA GeForce RTX 3080 Ti, skipped
+* Device #9: NVIDIA GeForce RTX 3080 Ti, skipped
+* Device #10: NVIDIA GeForce RTX 3080 Ti, skipped
+* Device #11: NVIDIA GeForce RTX 3080 Ti, skipped
+* Device #12: NVIDIA GeForce RTX 3080 Ti, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #13: Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --optimized-kernel-enable
+
+Hashmode: 0 - MD5
+
+Speed.#1.........: 67437.5 MH/s (38.94ms) @ Accel:32 Loops:1024 Thr:1024 Vec:8
+Speed.#2.........: 65373.3 MH/s (19.47ms) @ Accel:32 Loops:512 Thr:1024 Vec:8
+Speed.#3.........: 59901.4 MH/s (21.46ms) @ Accel:32 Loops:512 Thr:1024 Vec:8
+Speed.#4.........: 66050.0 MH/s (19.36ms) @ Accel:32 Loops:512 Thr:1024 Vec:8
+Speed.#5.........: 65865.9 MH/s (19.44ms) @ Accel:32 Loops:512 Thr:1024 Vec:8
+Speed.#6.........: 66887.7 MH/s (19.16ms) @ Accel:32 Loops:512 Thr:1024 Vec:8
+Speed.#*.........:  391.5 GH/s
+
+Hashmode: 100 - SHA1
+
+Speed.#1.........: 21400.4 MH/s (30.56ms) @ Accel:32 Loops:256 Thr:1024 Vec:1
+Speed.#2.........: 21270.0 MH/s (30.56ms) @ Accel:32 Loops:256 Thr:1024 Vec:1
+Speed.#3.........: 16520.2 MH/s (37.46ms) @ Accel:32 Loops:256 Thr:1024 Vec:1
+Speed.#4.........: 21435.5 MH/s (30.44ms) @ Accel:32 Loops:256 Thr:1024 Vec:1
+Speed.#5.........: 21277.6 MH/s (30.70ms) @ Accel:32 Loops:256 Thr:1024 Vec:1
+Speed.#6.........: 21604.0 MH/s (30.18ms) @ Accel:32 Loops:256 Thr:1024 Vec:1
+Speed.#*.........:  123.5 GH/s
+
+Hashmode: 1400 - SHA2-256
+
+Speed.#1.........:  9324.2 MH/s (71.04ms) @ Accel:8 Loops:1024 Thr:1024 Vec:1
+Speed.#2.........:  9378.1 MH/s (70.44ms) @ Accel:32 Loops:256 Thr:1024 Vec:1
+Speed.#3.........:  8361.8 MH/s (78.50ms) @ Accel:32 Loops:256 Thr:1024 Vec:1
+Speed.#4.........:  9347.7 MH/s (70.83ms) @ Accel:32 Loops:256 Thr:1024 Vec:1
+Speed.#5.........:  9353.6 MH/s (70.75ms) @ Accel:32 Loops:256 Thr:1024 Vec:1
+Speed.#6.........:  9404.4 MH/s (70.38ms) @ Accel:32 Loops:256 Thr:1024 Vec:1
+Speed.#*.........: 55169.7 MH/s
+
+Hashmode: 1700 - SHA2-512
+
+Speed.#1.........:  3101.0 MH/s (53.19ms) @ Accel:8 Loops:256 Thr:1024 Vec:1
+Speed.#2.........:  3088.2 MH/s (53.26ms) @ Accel:8 Loops:256 Thr:1024 Vec:1
+Speed.#3.........:  2928.1 MH/s (55.33ms) @ Accel:8 Loops:256 Thr:1024 Vec:1
+Speed.#4.........:  3094.8 MH/s (53.27ms) @ Accel:8 Loops:256 Thr:1024 Vec:1
+Speed.#5.........:  3078.3 MH/s (53.57ms) @ Accel:8 Loops:256 Thr:1024 Vec:1
+Speed.#6.........:  3137.8 MH/s (52.56ms) @ Accel:8 Loops:256 Thr:1024 Vec:1
+Speed.#*.........: 18428.3 MH/s
+
+Hashmode: 22000 - WPA-PBKDF2-PMKID+EAPOL (Iterations: 4095)
+
+Speed.#1.........:  1088.8 kH/s (74.48ms) @ Accel:8 Loops:512 Thr:1024 Vec:1
+Speed.#2.........:  1077.8 kH/s (75.24ms) @ Accel:16 Loops:256 Thr:1024 Vec:1
+Speed.#3.........:  1007.9 kH/s (80.49ms) @ Accel:16 Loops:256 Thr:1024 Vec:1
+Speed.#4.........:  1079.1 kH/s (75.15ms) @ Accel:16 Loops:256 Thr:1024 Vec:1
+Speed.#5.........:  1079.9 kH/s (75.11ms) @ Accel:16 Loops:256 Thr:1024 Vec:1
+Speed.#6.........:  1098.6 kH/s (73.87ms) @ Accel:16 Loops:256 Thr:1024 Vec:1
+Speed.#*.........:  6432.0 kH/s
+
+Hashmode: 1000 - NTLM
+
+Speed.#1.........:  118.7 GH/s (21.67ms) @ Accel:32 Loops:1024 Thr:1024 Vec:8
+Speed.#2.........:  113.5 GH/s (10.87ms) @ Accel:32 Loops:512 Thr:1024 Vec:8
+Speed.#3.........:  101.5 GH/s (11.80ms) @ Accel:32 Loops:512 Thr:1024 Vec:8
+Speed.#4.........:  113.8 GH/s (10.85ms) @ Accel:32 Loops:512 Thr:1024 Vec:8
+Speed.#5.........:  113.3 GH/s (10.93ms) @ Accel:32 Loops:512 Thr:1024 Vec:8
+Speed.#6.........:  114.7 GH/s (10.71ms) @ Accel:32 Loops:512 Thr:1024 Vec:8
+Speed.#*.........:  675.5 GH/s
+
+Hashmode: 3000 - LM
+
+Speed.#1.........: 64538.8 MH/s (39.96ms) @ Accel:512 Loops:1024 Thr:64 Vec:1
+Speed.#2.........: 63796.6 MH/s (40.06ms) @ Accel:512 Loops:1024 Thr:64 Vec:1
+Speed.#3.........: 60368.2 MH/s (41.48ms) @ Accel:512 Loops:1024 Thr:64 Vec:1
+Speed.#4.........: 64424.7 MH/s (39.93ms) @ Accel:512 Loops:1024 Thr:64 Vec:1
+Speed.#5.........: 64041.9 MH/s (40.16ms) @ Accel:512 Loops:1024 Thr:64 Vec:1
+Speed.#6.........: 65251.3 MH/s (39.39ms) @ Accel:512 Loops:1024 Thr:64 Vec:1
+Speed.#*.........:  382.4 GH/s
+
+Hashmode: 5500 - NetNTLMv1 / NetNTLMv1+ESS
+
+Speed.#1.........: 67911.4 MH/s (38.63ms) @ Accel:32 Loops:1024 Thr:1024 Vec:2
+Speed.#2.........: 67185.0 MH/s (38.92ms) @ Accel:32 Loops:1024 Thr:1024 Vec:2
+Speed.#3.........: 62010.7 MH/s (42.29ms) @ Accel:32 Loops:1024 Thr:1024 Vec:2
+Speed.#4.........: 67549.5 MH/s (38.74ms) @ Accel:32 Loops:1024 Thr:1024 Vec:2
+Speed.#5.........: 67309.9 MH/s (38.89ms) @ Accel:32 Loops:1024 Thr:1024 Vec:2
+Speed.#6.........: 68702.0 MH/s (38.16ms) @ Accel:32 Loops:1024 Thr:1024 Vec:2
+Speed.#*.........:  400.7 GH/s
+
+Hashmode: 5600 - NetNTLMv2
+
+Speed.#1.........:  4824.2 MH/s (68.60ms) @ Accel:32 Loops:128 Thr:1024 Vec:1
+Speed.#2.........:  4804.0 MH/s (68.86ms) @ Accel:16 Loops:256 Thr:1024 Vec:1
+Speed.#3.........:  4529.7 MH/s (71.56ms) @ Accel:16 Loops:256 Thr:1024 Vec:1
+Speed.#4.........:  4820.2 MH/s (68.63ms) @ Accel:16 Loops:256 Thr:1024 Vec:1
+Speed.#5.........:  4774.7 MH/s (69.31ms) @ Accel:16 Loops:256 Thr:1024 Vec:1
+Speed.#6.........:  4872.0 MH/s (67.88ms) @ Accel:16 Loops:256 Thr:1024 Vec:1
+Speed.#*.........: 28624.8 MH/s

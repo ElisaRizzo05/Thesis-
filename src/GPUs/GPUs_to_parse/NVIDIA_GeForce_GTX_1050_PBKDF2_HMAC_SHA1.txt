@@ -1,0 +1,839 @@
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   790.0 kH/s (39.54ms) @ Accel:128 Loops:249 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:27:27 2023
+Stopped: Thu Sep 07 13:27:34 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   789.5 kH/s (39.49ms) @ Accel:128 Loops:249 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:27:37 2023
+Stopped: Thu Sep 07 13:27:40 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   728.6 kH/s (50.65ms) @ Accel:32 Loops:999 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:27:41 2023
+Stopped: Thu Sep 07 13:27:43 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   767.1 kH/s (33.22ms) @ Accel:64 Loops:499 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:27:44 2023
+Stopped: Thu Sep 07 13:27:46 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   787.9 kH/s (39.61ms) @ Accel:128 Loops:249 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:27:47 2023
+Stopped: Thu Sep 07 13:27:49 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   744.4 kH/s (49.17ms) @ Accel:32 Loops:999 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:27:50 2023
+Stopped: Thu Sep 07 13:27:52 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   786.7 kH/s (39.57ms) @ Accel:128 Loops:249 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:27:53 2023
+Stopped: Thu Sep 07 13:27:55 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   726.9 kH/s (50.69ms) @ Accel:32 Loops:999 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:27:56 2023
+Stopped: Thu Sep 07 13:27:58 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   791.7 kH/s (39.43ms) @ Accel:128 Loops:249 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:27:59 2023
+Stopped: Thu Sep 07 13:28:01 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   792.4 kH/s (39.39ms) @ Accel:128 Loops:249 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:28:02 2023
+Stopped: Thu Sep 07 13:28:04 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   750.0 kH/s (49.17ms) @ Accel:32 Loops:999 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:28:05 2023
+Stopped: Thu Sep 07 13:28:07 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   749.0 kH/s (49.18ms) @ Accel:32 Loops:999 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:28:08 2023
+Stopped: Thu Sep 07 13:28:10 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   790.6 kH/s (39.46ms) @ Accel:128 Loops:249 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:28:11 2023
+Stopped: Thu Sep 07 13:28:13 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   748.6 kH/s (49.13ms) @ Accel:32 Loops:999 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:28:14 2023
+Stopped: Thu Sep 07 13:28:16 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   728.7 kH/s (50.69ms) @ Accel:32 Loops:999 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:28:17 2023
+Stopped: Thu Sep 07 13:28:19 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   790.8 kH/s (39.47ms) @ Accel:128 Loops:249 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:28:20 2023
+Stopped: Thu Sep 07 13:28:23 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   787.9 kH/s (39.60ms) @ Accel:128 Loops:249 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:28:23 2023
+Stopped: Thu Sep 07 13:28:26 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   745.3 kH/s (49.18ms) @ Accel:32 Loops:999 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:28:26 2023
+Stopped: Thu Sep 07 13:28:28 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   788.3 kH/s (39.52ms) @ Accel:128 Loops:249 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:28:29 2023
+Stopped: Thu Sep 07 13:28:31 2023
+
+C:\Users\riski\OneDrive\Desktop\hashcat-6.2.6>hashcat -b --force -m 12000
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 1.2 CUDA 11.1.96) - Platform #1 [NVIDIA Corporation]
+=======================================================================
+* Device #1: GeForce GTX 1050, 1472/2048 MB (512 MB allocatable), 5MCU
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-3470 CPU @ 3.20GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --force
+* --optimized-kernel-enable
+
+------------------------------------------------------
+* Hash-Mode 12000 (PBKDF2-HMAC-SHA1) [Iterations: 999]
+------------------------------------------------------
+
+Speed.#1.........:   741.7 kH/s (49.46ms) @ Accel:32 Loops:999 Thr:256 Vec:1
+
+Started: Thu Sep 07 13:28:32 2023
+Stopped: Thu Sep 07 13:28:34 2023
