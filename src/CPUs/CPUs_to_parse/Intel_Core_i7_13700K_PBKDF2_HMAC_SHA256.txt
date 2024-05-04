@@ -1,0 +1,229 @@
+OpenCL API (OpenCL 3.0 CUDA 12.2.138) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce RTX 4070 Ti, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: 13th Gen Intel(R) Core(TM) i7-13700K, 16222/32509 MB (4063 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+--------------------------------------------------------
+* Hash-Mode 10900 (PBKDF2-HMAC-SHA256) [Iterations: 999]
+--------------------------------------------------------
+
+Speed.#2.........:   203.0 kH/s (39.66ms) @ Accel:1024 Loops:499 Thr:1 Vec:8
+
+Started: Thu Sep 07 12:02:25 2023
+Stopped: Thu Sep 07 12:02:27 2023
+
+OpenCL API (OpenCL 3.0 CUDA 12.2.138) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce RTX 4070 Ti, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: 13th Gen Intel(R) Core(TM) i7-13700K, 16222/32509 MB (4063 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+--------------------------------------------------------
+* Hash-Mode 10900 (PBKDF2-HMAC-SHA256) [Iterations: 999]
+--------------------------------------------------------
+
+Speed.#2.........:   199.0 kH/s (60.49ms) @ Accel:512 Loops:999 Thr:1 Vec:8
+
+Started: Thu Sep 07 12:02:16 2023
+Stopped: Thu Sep 07 12:02:18 2023
+
+OpenCL API (OpenCL 3.0 CUDA 12.2.138) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce RTX 4070 Ti, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: 13th Gen Intel(R) Core(TM) i7-13700K, 16222/32509 MB (4063 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+--------------------------------------------------------
+* Hash-Mode 10900 (PBKDF2-HMAC-SHA256) [Iterations: 999]
+--------------------------------------------------------
+
+Speed.#2.........:   201.6 kH/s (39.99ms) @ Accel:1024 Loops:499 Thr:1 Vec:8
+
+Started: Thu Sep 07 12:02:05 2023
+Stopped: Thu Sep 07 12:02:07 2023
+
+OpenCL API (OpenCL 3.0 CUDA 12.2.138) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce RTX 4070 Ti, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: 13th Gen Intel(R) Core(TM) i7-13700K, 16222/32509 MB (4063 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+--------------------------------------------------------
+* Hash-Mode 10900 (PBKDF2-HMAC-SHA256) [Iterations: 999]
+--------------------------------------------------------
+
+Speed.#2.........:   202.8 kH/s (59.40ms) @ Accel:512 Loops:999 Thr:1 Vec:8
+
+Started: Thu Sep 07 12:01:55 2023
+Stopped: Thu Sep 07 12:01:58 2023
+
+OpenCL API (OpenCL 3.0 CUDA 12.2.138) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce RTX 4070 Ti, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: 13th Gen Intel(R) Core(TM) i7-13700K, 16222/32509 MB (4063 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+--------------------------------------------------------
+* Hash-Mode 10900 (PBKDF2-HMAC-SHA256) [Iterations: 999]
+--------------------------------------------------------
+
+Speed.#2.........:   200.7 kH/s (40.14ms) @ Accel:1024 Loops:499 Thr:1 Vec:8
+
+Started: Thu Sep 07 12:01:42 2023
+Stopped: Thu Sep 07 12:01:45 2023
+
+OpenCL API (OpenCL 3.0 CUDA 12.2.138) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce RTX 4070 Ti, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: 13th Gen Intel(R) Core(TM) i7-13700K, 16222/32509 MB (4063 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+--------------------------------------------------------
+* Hash-Mode 10900 (PBKDF2-HMAC-SHA256) [Iterations: 999]
+--------------------------------------------------------
+
+Speed.#2.........:   203.7 kH/s (39.58ms) @ Accel:1024 Loops:499 Thr:1 Vec:8
+
+Started: Thu Sep 07 12:01:32 2023
+Stopped: Thu Sep 07 12:01:34 2023
+
+OpenCL API (OpenCL 3.0 CUDA 12.2.138) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce RTX 4070 Ti, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: 13th Gen Intel(R) Core(TM) i7-13700K, 16222/32509 MB (4063 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+--------------------------------------------------------
+* Hash-Mode 10900 (PBKDF2-HMAC-SHA256) [Iterations: 999]
+--------------------------------------------------------
+
+Speed.#2.........:   199.3 kH/s (40.44ms) @ Accel:1024 Loops:499 Thr:1 Vec:8
+
+Started: Thu Sep 07 12:01:22 2023
+Stopped: Thu Sep 07 12:01:24 2023
+
+OpenCL API (OpenCL 3.0 CUDA 12.2.138) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce RTX 4070 Ti, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: 13th Gen Intel(R) Core(TM) i7-13700K, 16222/32509 MB (4063 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+--------------------------------------------------------
+* Hash-Mode 10900 (PBKDF2-HMAC-SHA256) [Iterations: 999]
+--------------------------------------------------------
+
+Speed.#2.........:   200.9 kH/s (59.99ms) @ Accel:512 Loops:999 Thr:1 Vec:8
+
+Started: Thu Sep 07 12:01:12 2023
+Stopped: Thu Sep 07 12:01:14 2023
+
+OpenCL API (OpenCL 3.0 CUDA 12.2.138) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce RTX 4070 Ti, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: 13th Gen Intel(R) Core(TM) i7-13700K, 16222/32509 MB (4063 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+--------------------------------------------------------
+* Hash-Mode 10900 (PBKDF2-HMAC-SHA256) [Iterations: 999]
+--------------------------------------------------------
+
+Speed.#2.........:   203.4 kH/s (39.60ms) @ Accel:1024 Loops:499 Thr:1 Vec:8
+
+Started: Thu Sep 07 12:01:03 2023
+Stopped: Thu Sep 07 12:01:05 2023
+
+OpenCL API (OpenCL 3.0 CUDA 12.2.138) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce RTX 4070 Ti, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: 13th Gen Intel(R) Core(TM) i7-13700K, 16222/32509 MB (4063 MB allocatable), 24MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+--------------------------------------------------------
+* Hash-Mode 10900 (PBKDF2-HMAC-SHA256) [Iterations: 999]
+--------------------------------------------------------
+
+Speed.#2.........:   203.0 kH/s (39.66ms) @ Accel:1024 Loops:499 Thr:1 Vec:8
+
+Started: Thu Sep 07 12:00:47 2023
+Stopped: Thu Sep 07 12:00:54 2023

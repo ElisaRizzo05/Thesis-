@@ -1,0 +1,290 @@
+Microsoft Windows [Versione 10.0.22000.1817]
+(c) Microsoft Corporation. Tutti i diritti riservati.
+
+C:\Users\asiad>cd C:\Users\asiad\Desktop\Roba Eli\hashcat-6.2.6
+
+C:\Users\asiad\Desktop\Roba Eli\hashcat-6.2.6>hashcat -I
+hashcat (v6.2.6) starting in backend information mode
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL Info:
+============
+
+OpenCL Platform ID #1
+  Vendor..: NVIDIA Corporation
+  Name....: NVIDIA CUDA
+  Version.: OpenCL 3.0 CUDA 11.4.264
+
+  Backend Device ID #1
+    Type...........: GPU
+    Vendor.ID......: 32
+    Vendor.........: NVIDIA Corporation
+    Name...........: NVIDIA GeForce GT 740
+    Version........: OpenCL 3.0 CUDA
+    Processor(s)...: 2
+    Clock..........: 0
+    Memory.Total...: 1024 MB (limited to 256 MB allocatable in one block)
+    Memory.Free....: 832 MB
+    Local.Memory...: 48 KB
+    OpenCL.Version.: OpenCL C 1.2
+    Driver.Version.: 473.81
+    PCI.Addr.BDF...: 01:00.0
+
+OpenCL Platform ID #2
+  Vendor..: Intel(R) Corporation
+  Name....: Intel(R) OpenCL
+  Version.: OpenCL 2.1 WINDOWS
+
+  Backend Device ID #2
+    Type...........: CPU
+    Vendor.ID......: 8
+    Vendor.........: Intel(R) Corporation
+    Name...........: Intel(R) Core(TM) i5-4430 CPU @ 3.00GHz
+    Version........: OpenCL 2.1 (Build 0)
+    Processor(s)...: 4
+    Clock..........: 3000
+    Memory.Total...: 8134 MB (limited to 1016 MB allocatable in one block)
+    Memory.Free....: 4035 MB
+    Local.Memory...: 32 KB
+    OpenCL.Version.: OpenCL C 2.0
+    Driver.Version.: 2020.11.11.0.13_160000
+
+
+C:\Users\asiad\Desktop\Roba Eli\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 3.0 CUDA 11.4.264) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce GT 740, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-4430 CPU @ 3.00GHz, 4035/8134 MB (1016 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#2.........:   311.8 MH/s (6.64ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#2.........:   218.7 MH/s (9.50ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#2.........: 85421.1 kH/s (24.46ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#2.........: 29535.6 kH/s (70.89ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#2.........:    10476 H/s (48.61ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#2.........:   527.5 MH/s (3.89ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#2.........:   100.3 MH/s (20.56ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#2.........:   337.1 MH/s (6.13ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#2.........: 25602.3 kH/s (81.79ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#2.........:  4287.2 kH/s (60.82ms) @ Accel:64 Loops:1024 Thr:1 Vec:8
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#2.........:    30663 H/s (66.18ms) @ Accel:512 Loops:1000 Thr:1 Vec:8
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#2.........:     1064 H/s (14.46ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#2.........:     1950 H/s (52.19ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#2.........:  1719.2 kH/s (76.07ms) @ Accel:32 Loops:1024 Thr:1 Vec:8
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#2.........:  2017.1 kH/s (64.90ms) @ Accel:128 Loops:256 Thr:1 Vec:8
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#2.........:     1874 H/s (45.31ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#2.........:     1065 H/s (73.77ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#2.........:    13198 H/s (76.82ms) @ Accel:256 Loops:1023 Thr:1 Vec:4
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#2.........:     2365 H/s (53.83ms) @ Accel:128 Loops:4096 Thr:1 Vec:8
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#2.........:      342 H/s (93.39ms) @ Accel:128 Loops:16384 Thr:1 Vec:8
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#2.........:     1087 H/s (57.02ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#2.........:     6767 H/s (74.65ms) @ Accel:512 Loops:512 Thr:1 Vec:8
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#2.........:      785 H/s (54.29ms) @ Accel:512 Loops:512 Thr:1 Vec:8
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#2.........:    69042 H/s (28.30ms) @ Accel:512 Loops:499 Thr:1 Vec:8
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#2.........:      139 H/s (75.02ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+Started: Thu Apr 27 20:52:03 2023
+Stopped: Thu Apr 27 20:55:04 2023
+
+C:\Users\asiad\Desktop\Roba Eli\hashcat-6.2.6>hashcat -b -m 8900 --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 3.0 CUDA 11.4.264) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce GT 740, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-4430 CPU @ 3.00GHz, 4035/8134 MB (1016 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#2.........:       88 H/s (1.14ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Thu Apr 27 20:55:48 2023
+Stopped: Thu Apr 27 20:55:52 2023
+
+C:\Users\asiad\Desktop\Roba Eli\hashcat-6.2.6>

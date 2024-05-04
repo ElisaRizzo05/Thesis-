@@ -1,0 +1,248 @@
+C:\Users\asiad\Desktop\Roba Eli\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 3.0 CUDA 11.4.264) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce GT 740, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-4430 CPU @ 3.00GHz, 4035/8134 MB (1016 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#2.........:   231.6 MH/s (8.84ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#2.........:   214.9 MH/s (9.55ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#2.........: 84007.5 kH/s (24.89ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#2.........: 28454.8 kH/s (73.57ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#2.........:    10087 H/s (50.30ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#2.........:   495.1 MH/s (4.13ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#2.........: 97867.8 kH/s (21.14ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#2.........:   260.7 MH/s (7.90ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#2.........: 25292.1 kH/s (82.76ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#2.........:  4098.7 kH/s (63.62ms) @ Accel:64 Loops:1024 Thr:1 Vec:8
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#2.........:    29249 H/s (69.34ms) @ Accel:512 Loops:1000 Thr:1 Vec:8
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#2.........:     1837 H/s (8.32ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#2.........:     2116 H/s (48.07ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#2.........:  1905.6 kH/s (68.65ms) @ Accel:32 Loops:1024 Thr:1 Vec:8
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#2.........:  2000.6 kH/s (65.41ms) @ Accel:64 Loops:512 Thr:1 Vec:8
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#2.........:     1812 H/s (46.75ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#2.........:     1054 H/s (74.51ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#2.........:    13167 H/s (51.35ms) @ Accel:512 Loops:511 Thr:1 Vec:4
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#2.........:     2460 H/s (51.77ms) @ Accel:128 Loops:4096 Thr:1 Vec:8
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#2.........:      342 H/s (93.52ms) @ Accel:128 Loops:16384 Thr:1 Vec:8
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#2.........:     1067 H/s (58.07ms) @ Accel:512 Loops:1024 Thr:1 Vec:8
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#2.........:     6603 H/s (76.14ms) @ Accel:256 Loops:1024 Thr:1 Vec:8
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#2.........:      780 H/s (54.61ms) @ Accel:512 Loops:512 Thr:1 Vec:8
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#2.........:    69516 H/s (28.12ms) @ Accel:512 Loops:499 Thr:1 Vec:8
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#2.........:      132 H/s (79.09ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+Started: Sun Apr 23 19:06:44 2023
+Stopped: Sun Apr 23 19:10:02 2023
+
+C:\Users\asiad\Desktop\Roba Eli\hashcat-6.2.6>hashcat -b -m 8900 --force --opencl-device-types 1",
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Invalid OpenCL device-type 0 specified.
+
+Started: Sun Apr 23 19:36:43 2023
+Stopped: Sun Apr 23 19:36:44 2023
+
+C:\Users\asiad\Desktop\Roba Eli\hashcat-6.2.6>hashcat -b -m 8900 --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+Successfully initialized the NVIDIA main driver CUDA runtime library.
+
+Failed to initialize NVIDIA RTC library.
+
+* Device #1: CUDA SDK Toolkit not installed or incorrectly installed.
+             CUDA SDK Toolkit required for proper device support and utilization.
+             Falling back to OpenCL runtime.
+
+OpenCL API (OpenCL 3.0 CUDA 11.4.264) - Platform #1 [NVIDIA Corporation]
+========================================================================
+* Device #1: NVIDIA GeForce GT 740, skipped
+
+OpenCL API (OpenCL 2.1 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #2: Intel(R) Core(TM) i5-4430 CPU @ 3.00GHz, 4035/8134 MB (1016 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#2.........:       56 H/s (1.73ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Sun Apr 23 19:37:15 2023
+Stopped: Sun Apr 23 19:37:20 2023
+
+C:\Users\asiad\Desktop\Roba Eli\hashcat-6.2.6>hashcat -b -m 8900 --force --opencl-device-types 1

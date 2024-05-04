@@ -1,0 +1,435 @@
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    26615 H/s (9.07ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:05 2023
+[2KStopped: Sat Apr 15 19:13:06 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    30563 H/s (7.76ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:06 2023
+[2KStopped: Sat Apr 15 19:13:07 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    36615 H/s (6.32ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:07 2023
+[2KStopped: Sat Apr 15 19:13:09 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    35903 H/s (6.34ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:09 2023
+[2KStopped: Sat Apr 15 19:13:10 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    36968 H/s (6.29ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:10 2023
+[2KStopped: Sat Apr 15 19:13:12 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    27290 H/s (8.51ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:12 2023
+[2KStopped: Sat Apr 15 19:13:13 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    36589 H/s (6.20ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:13 2023
+[2KStopped: Sat Apr 15 19:13:14 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    20977 H/s (11.28ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:14 2023
+[2KStopped: Sat Apr 15 19:13:16 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    38422 H/s (5.96ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:16 2023
+[2KStopped: Sat Apr 15 19:13:17 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    24651 H/s (9.73ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:17 2023
+[2KStopped: Sat Apr 15 19:13:19 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    27363 H/s (8.57ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:19 2023
+[2KStopped: Sat Apr 15 19:13:20 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    37835 H/s (6.03ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:20 2023
+[2KStopped: Sat Apr 15 19:13:21 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    22471 H/s (10.62ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:21 2023
+[2KStopped: Sat Apr 15 19:13:23 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    35391 H/s (6.38ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:23 2023
+[2KStopped: Sat Apr 15 19:13:24 2023
+hashcat (v6.1.1) starting in benchmark mode...
+
+[33mBenchmarking uses hand-optimized kernel code by default.[0m
+[33mYou can use it in your cracking session by setting the -O option.[0m
+[33mNote: Using optimized kernel code limits the maximum supported password length.[0m
+[33mTo disable the optimized kernel code in benchmark mode, use the -w option.[0m
+[33m[0m
+[33mYou have enabled --force to bypass dangerous warnings and errors![0m
+[33mThis can hide serious problems and should only be done when debugging.[0m
+[33mDo not report hashcat issues encountered when using --force.[0m
+[33mKernel /usr/share/hashcat/OpenCL/m08900-optimized.cl:[0m
+[33mOptimized kernel requested but not needed - falling back to pure kernel[0m
+[33m[0m
+OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+=============================================================================================================================
+* Device #1: pthread-12th Gen Intel(R) Core(TM) i5-12600KF, 21818/21882 MB (8192 MB allocatable), 16MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+Hashmode: 8900 - scrypt (Iterations: 1)
+
+Speed.#1.........:    38708 H/s (5.96ms) @ Accel:16 Loops:1 Thr:1 Vec:8
+
+Started: Sat Apr 15 19:13:24 2023
+[2KStopped: Sat Apr 15 19:13:25 2023

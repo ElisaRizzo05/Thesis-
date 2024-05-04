@@ -1,0 +1,3575 @@
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -I
+hashcat (v6.2.6) starting in backend information mode
+
+OpenCL Info:
+============
+
+OpenCL Platform ID #1
+  Vendor..: Advanced Micro Devices, Inc.
+  Name....: AMD Accelerated Parallel Processing
+  Version.: OpenCL 2.0 AMD-APP (1800.11)
+
+  Backend Device ID #1
+    Type...........: GPU
+    Vendor.ID......: 1
+    Vendor.........: Advanced Micro Devices, Inc.
+    Name...........: AMD Radeon HD 6300M Series
+    Version........: OpenCL 1.2 AMD-APP (1800.11)
+    Processor(s)...: 2
+    Clock..........: 750
+    Memory.Total...: 512 MB (limited to 192 MB allocatable in one block)
+    Memory.Free....: 384 MB
+    Local.Memory...: 32 KB
+    OpenCL.Version.: OpenCL C 1.2
+    Driver.Version.: 1800.11 (VM)
+    PCI.Addr.BDF...: 01:00.0
+
+  Backend Device ID #2 (Alias: #3)
+    Type...........: CPU
+    Vendor.ID......: 128
+    Vendor.........: GenuineIntel
+    Name...........:
+    Version........: OpenCL 1.2 AMD-APP (1800.11)
+    Processor(s)...: 4
+    Clock..........: 2527
+    Memory.Total...: 3958 MB (limited to 1024 MB allocatable in one block)
+    Memory.Free....: 1947 MB
+    Local.Memory...: 32 KB
+    OpenCL.Version.: OpenCL C 1.2
+    Driver.Version.: 1800.11 (sse2)
+
+OpenCL Platform ID #2
+  Vendor..: Intel(R) Corporation
+  Name....: Intel(R) OpenCL
+  Version.: OpenCL 3.0 WINDOWS
+
+  Backend Device ID #3 (Alias: #2)
+    Type...........: CPU
+    Vendor.ID......: 8
+    Vendor.........: Intel(R) Corporation
+    Name...........: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz
+    Version........: OpenCL 3.0 (Build 0)
+    Processor(s)...: 4
+    Clock..........: 2530
+    Memory.Total...: 3958 MB (limited to 989 MB allocatable in one block)
+    Memory.Free....: 1947 MB
+    Local.Memory...: 32 KB
+    OpenCL.Version.: OpenCL C 3.0
+    Driver.Version.: 2022.15.12.0.01_081451
+
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 71510.5 kH/s (28.79ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 37698.3 kH/s (55.17ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 13628.0 kH/s (76.40ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4310.1 kH/s (60.42ms) @ Accel:128 Loops:512 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1769 H/s (71.71ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   126.7 MH/s (16.15ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 30043.7 kH/s (68.98ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 88847.8 kH/s (23.22ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  6283.6 kH/s (82.98ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1226.9 kH/s (52.67ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    18504 H/s (54.11ms) @ Accel:256 Loops:1000 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:     1074 H/s (13.95ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      582 H/s (87.27ms) @ Accel:512 Loops:512 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1629.9 kH/s (79.96ms) @ Accel:32 Loops:1024 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1627.1 kH/s (80.11ms) @ Accel:32 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      324 H/s (65.47ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      161 H/s (60.92ms) @ Accel:64 Loops:512 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     1997 H/s (62.79ms) @ Accel:32 Loops:1023 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      640 H/s (49.30ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:      101 H/s (78.51ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      182 H/s (87.22ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1362 H/s (92.63ms) @ Accel:64 Loops:1024 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      261 H/s (81.42ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    11739 H/s (84.31ms) @ Accel:256 Loops:499 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       21 H/s (61.70ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+Started: Mon May 01 14:10:25 2023
+Stopped: Mon May 01 14:44:30 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 70617.6 kH/s (29.12ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 37273.4 kH/s (55.76ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 14505.0 kH/s (71.75ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4216.8 kH/s (61.69ms) @ Accel:128 Loops:512 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1733 H/s (73.18ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   129.8 MH/s (15.70ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 30023.5 kH/s (68.91ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 88830.6 kH/s (23.12ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  6168.8 kH/s (84.40ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1189.9 kH/s (54.34ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    16166 H/s (61.90ms) @ Accel:256 Loops:1000 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:      775 H/s (19.37ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      539 H/s (46.89ms) @ Accel:256 Loops:512 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1496.3 kH/s (87.11ms) @ Accel:128 Loops:256 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1563.2 kH/s (83.27ms) @ Accel:256 Loops:128 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      319 H/s (66.46ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      152 H/s (64.18ms) @ Accel:64 Loops:512 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     1145 H/s (54.67ms) @ Accel:16 Loops:1023 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      606 H/s (51.87ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:       83 H/s (96.20ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      155 H/s (102.62ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1159 H/s (54.34ms) @ Accel:64 Loops:512 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      223 H/s (95.09ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:     9863 H/s (100.40ms) @ Accel:256 Loops:499 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       17 H/s (73.96ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+Started: Mon May 01 15:07:57 2023
+Stopped: Mon May 01 15:15:35 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 69023.4 kH/s (29.79ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 35772.1 kH/s (57.89ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 14731.6 kH/s (70.60ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4201.6 kH/s (61.77ms) @ Accel:256 Loops:256 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1766 H/s (72.00ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   126.8 MH/s (15.96ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 29185.2 kH/s (70.75ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 87185.0 kH/s (23.51ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  6213.8 kH/s (83.76ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1187.2 kH/s (54.26ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    15309 H/s (65.42ms) @ Accel:512 Loops:500 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:      866 H/s (16.18ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      554 H/s (91.71ms) @ Accel:512 Loops:512 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1491.8 kH/s (87.09ms) @ Accel:128 Loops:256 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1550.8 kH/s (83.80ms) @ Accel:32 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      320 H/s (67.85ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      156 H/s (62.56ms) @ Accel:32 Loops:1024 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     1581 H/s (79.40ms) @ Accel:32 Loops:1023 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      610 H/s (51.32ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:       92 H/s (86.24ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      148 H/s (104.54ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:      627 H/s (100.65ms) @ Accel:64 Loops:512 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      254 H/s (83.37ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    11628 H/s (84.67ms) @ Accel:256 Loops:499 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       20 H/s (63.01ms) @ Accel:512 Loops:128 Thr:1 Vec:2
+
+Started: Mon May 01 15:16:07 2023
+Stopped: Mon May 01 15:23:48 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 67418.9 kH/s (30.54ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 37265.9 kH/s (55.55ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 14730.5 kH/s (70.59ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4220.2 kH/s (61.51ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1746 H/s (72.71ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   125.8 MH/s (16.20ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 28472.6 kH/s (72.59ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 70625.2 kH/s (28.87ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  5090.9 kH/s (50.71ms) @ Accel:64 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1188.3 kH/s (54.29ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    17801 H/s (55.77ms) @ Accel:256 Loops:1000 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:     1062 H/s (14.15ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      516 H/s (48.95ms) @ Accel:512 Loops:256 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1618.8 kH/s (80.43ms) @ Accel:256 Loops:128 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1612.0 kH/s (80.71ms) @ Accel:128 Loops:256 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      322 H/s (65.79ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      160 H/s (62.11ms) @ Accel:128 Loops:256 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     1995 H/s (62.76ms) @ Accel:32 Loops:1023 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      625 H/s (50.21ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:       99 H/s (80.56ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      180 H/s (88.19ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1367 H/s (92.01ms) @ Accel:64 Loops:1024 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      254 H/s (83.55ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    11398 H/s (57.73ms) @ Accel:512 Loops:249 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       21 H/s (62.61ms) @ Accel:512 Loops:128 Thr:1 Vec:2
+
+Started: Mon May 01 15:23:53 2023
+Stopped: Mon May 01 15:31:30 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 67472.6 kH/s (30.54ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 37830.4 kH/s (54.92ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 13873.7 kH/s (74.84ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4289.0 kH/s (60.51ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1764 H/s (71.96ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   127.9 MH/s (15.94ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 29796.0 kH/s (69.28ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 85689.2 kH/s (23.83ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  6234.5 kH/s (83.42ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1213.7 kH/s (53.10ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    15976 H/s (62.74ms) @ Accel:256 Loops:1000 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:     1081 H/s (13.83ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      542 H/s (46.67ms) @ Accel:256 Loops:512 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1526.9 kH/s (85.32ms) @ Accel:32 Loops:1024 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1525.4 kH/s (85.43ms) @ Accel:64 Loops:512 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      300 H/s (72.09ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      149 H/s (65.77ms) @ Accel:32 Loops:1024 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     2019 H/s (62.17ms) @ Accel:32 Loops:1023 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      542 H/s (58.20ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:      103 H/s (77.67ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      182 H/s (84.94ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1442 H/s (87.38ms) @ Accel:64 Loops:1024 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      230 H/s (92.11ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    11690 H/s (56.80ms) @ Accel:512 Loops:249 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       19 H/s (66.71ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+Started: Mon May 01 15:31:41 2023
+Stopped: Mon May 01 15:39:03 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 72741.0 kH/s (28.34ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 30179.1 kH/s (68.91ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 13321.1 kH/s (78.26ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  3528.0 kH/s (73.64ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1367 H/s (93.09ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   127.4 MH/s (16.07ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 28779.4 kH/s (71.97ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 83237.1 kH/s (24.70ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  5618.6 kH/s (92.80ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1057.4 kH/s (61.16ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    13952 H/s (72.28ms) @ Accel:512 Loops:500 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:      799 H/s (18.99ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      488 H/s (51.97ms) @ Accel:512 Loops:256 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1291.1 kH/s (100.99ms) @ Accel:32 Loops:1024 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1374.3 kH/s (47.21ms) @ Accel:32 Loops:512 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      266 H/s (79.83ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      131 H/s (76.83ms) @ Accel:256 Loops:128 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     1528 H/s (82.46ms) @ Accel:32 Loops:1023 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      501 H/s (63.07ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:       83 H/s (96.00ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      144 H/s (53.35ms) @ Accel:64 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1173 H/s (53.73ms) @ Accel:64 Loops:512 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      248 H/s (85.46ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    11718 H/s (84.78ms) @ Accel:256 Loops:499 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       18 H/s (71.30ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+Started: Mon May 01 15:39:07 2023
+Stopped: Mon May 01 15:46:43 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 70063.4 kH/s (29.40ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 33510.4 kH/s (62.12ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 12834.6 kH/s (81.16ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4338.1 kH/s (60.08ms) @ Accel:128 Loops:512 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1760 H/s (72.25ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   125.6 MH/s (16.27ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 29413.4 kH/s (70.34ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 82942.1 kH/s (24.83ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  5624.2 kH/s (92.62ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1047.1 kH/s (61.73ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    18366 H/s (54.37ms) @ Accel:256 Loops:1000 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:     1023 H/s (14.70ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      580 H/s (87.62ms) @ Accel:256 Loops:1024 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1635.2 kH/s (79.67ms) @ Accel:256 Loops:128 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1493.7 kH/s (87.20ms) @ Accel:32 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      321 H/s (65.99ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      159 H/s (61.64ms) @ Accel:32 Loops:1024 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     1911 H/s (52.94ms) @ Accel:128 Loops:255 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      533 H/s (59.15ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:      101 H/s (78.80ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      177 H/s (89.87ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1399 H/s (90.17ms) @ Accel:64 Loops:1024 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      257 H/s (82.78ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    11733 H/s (56.53ms) @ Accel:512 Loops:249 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       21 H/s (62.10ms) @ Accel:128 Loops:512 Thr:1 Vec:2
+
+Started: Mon May 01 15:46:55 2023
+Stopped: Mon May 01 15:54:54 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 72542.1 kH/s (28.45ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 38013.3 kH/s (54.69ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 15070.9 kH/s (69.15ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4183.0 kH/s (62.24ms) @ Accel:128 Loops:512 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1809 H/s (70.33ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   129.9 MH/s (15.71ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 29871.5 kH/s (69.28ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 84573.7 kH/s (24.38ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  6088.0 kH/s (85.65ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1028.4 kH/s (62.96ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    18520 H/s (54.20ms) @ Accel:256 Loops:1000 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:      764 H/s (19.61ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      552 H/s (91.77ms) @ Accel:256 Loops:1024 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1343.3 kH/s (97.08ms) @ Accel:128 Loops:256 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1319.6 kH/s (98.82ms) @ Accel:128 Loops:256 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      313 H/s (67.50ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      155 H/s (64.37ms) @ Accel:128 Loops:256 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     2025 H/s (49.94ms) @ Accel:128 Loops:255 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      632 H/s (49.88ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:       83 H/s (95.44ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      148 H/s (52.86ms) @ Accel:128 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1256 H/s (100.67ms) @ Accel:128 Loops:512 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      254 H/s (83.74ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:     9484 H/s (104.57ms) @ Accel:256 Loops:499 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       19 H/s (67.20ms) @ Accel:512 Loops:128 Thr:1 Vec:2
+
+Started: Mon May 01 15:55:04 2023
+Stopped: Mon May 01 16:02:30 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 71210.2 kH/s (28.91ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 36938.6 kH/s (56.26ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 14195.0 kH/s (73.35ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  3731.2 kH/s (69.83ms) @ Accel:512 Loops:128 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1807 H/s (70.32ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   118.0 MH/s (17.24ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 29985.7 kH/s (69.05ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 88513.1 kH/s (23.22ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  6095.9 kH/s (85.50ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1119.8 kH/s (57.69ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    15123 H/s (66.53ms) @ Accel:512 Loops:500 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:      732 H/s (20.56ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      475 H/s (53.37ms) @ Accel:512 Loops:256 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1282.2 kH/s (101.66ms) @ Accel:64 Loops:512 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1425.3 kH/s (91.44ms) @ Accel:64 Loops:512 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      292 H/s (74.21ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      149 H/s (66.94ms) @ Accel:128 Loops:256 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     1851 H/s (45.40ms) @ Accel:64 Loops:511 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      571 H/s (55.21ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:       93 H/s (85.43ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      164 H/s (97.22ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1223 H/s (51.48ms) @ Accel:128 Loops:256 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      237 H/s (89.64ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    10111 H/s (64.73ms) @ Accel:512 Loops:249 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       19 H/s (68.18ms) @ Accel:128 Loops:512 Thr:1 Vec:2
+
+Started: Mon May 01 16:02:38 2023
+Stopped: Mon May 01 16:10:18 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 60933.2 kH/s (33.84ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 30441.0 kH/s (68.28ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 12926.2 kH/s (80.61ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  3626.0 kH/s (71.61ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1480 H/s (85.89ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   114.0 MH/s (17.98ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 25223.4 kH/s (82.22ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 75836.6 kH/s (27.19ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  5267.7 kH/s (98.89ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1201.7 kH/s (53.79ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    18100 H/s (55.64ms) @ Accel:512 Loops:500 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:      774 H/s (19.31ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      490 H/s (103.47ms) @ Accel:256 Loops:1024 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1315.9 kH/s (99.08ms) @ Accel:64 Loops:512 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1268.2 kH/s (51.16ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      304 H/s (69.64ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      159 H/s (61.40ms) @ Accel:32 Loops:1024 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     1566 H/s (53.70ms) @ Accel:64 Loops:511 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      524 H/s (60.13ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:       86 H/s (92.08ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      160 H/s (96.38ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1070 H/s (58.86ms) @ Accel:64 Loops:512 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      211 H/s (50.16ms) @ Accel:128 Loops:512 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:     8829 H/s (55.85ms) @ Accel:128 Loops:499 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       19 H/s (69.05ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+Started: Mon May 01 16:10:32 2023
+Stopped: Mon May 01 16:17:57 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 67029.9 kH/s (30.80ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 31376.7 kH/s (66.34ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 12185.5 kH/s (85.57ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4181.0 kH/s (62.23ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1676 H/s (75.74ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   115.0 MH/s (17.80ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 26156.3 kH/s (79.26ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 82299.9 kH/s (24.98ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  5711.4 kH/s (91.26ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1064.7 kH/s (60.75ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    15841 H/s (62.90ms) @ Accel:512 Loops:500 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:      815 H/s (17.73ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      544 H/s (93.29ms) @ Accel:512 Loops:512 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1505.2 kH/s (86.27ms) @ Accel:32 Loops:1024 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1470.6 kH/s (88.52ms) @ Accel:32 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      306 H/s (70.65ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      130 H/s (75.46ms) @ Accel:32 Loops:1024 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     2014 H/s (41.72ms) @ Accel:64 Loops:511 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      588 H/s (53.54ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:       93 H/s (85.81ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      164 H/s (97.12ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1180 H/s (53.21ms) @ Accel:64 Loops:512 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      227 H/s (46.65ms) @ Accel:512 Loops:128 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:     9720 H/s (67.53ms) @ Accel:512 Loops:249 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       21 H/s (61.73ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+Started: Mon May 01 16:18:27 2023
+Stopped: Mon May 01 16:26:24 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 72976.2 kH/s (28.31ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 38029.0 kH/s (54.68ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 15089.1 kH/s (69.05ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4286.0 kH/s (60.70ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1719 H/s (73.84ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   128.9 MH/s (15.84ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 28184.7 kH/s (73.52ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 74935.6 kH/s (27.53ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  5171.5 kH/s (50.25ms) @ Accel:128 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1212.3 kH/s (53.25ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    18453 H/s (54.19ms) @ Accel:256 Loops:1000 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:     1085 H/s (13.83ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      512 H/s (99.05ms) @ Accel:256 Loops:1024 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1413.2 kH/s (92.20ms) @ Accel:32 Loops:1024 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1589.3 kH/s (82.02ms) @ Accel:256 Loops:128 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      311 H/s (68.12ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      158 H/s (61.80ms) @ Accel:32 Loops:1024 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     1697 H/s (74.04ms) @ Accel:32 Loops:1023 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      620 H/s (50.77ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:      101 H/s (79.21ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      174 H/s (88.62ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1407 H/s (89.84ms) @ Accel:128 Loops:512 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      256 H/s (82.92ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    11126 H/s (88.77ms) @ Accel:256 Loops:499 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       21 H/s (62.69ms) @ Accel:256 Loops:256 Thr:1 Vec:2
+
+Started: Mon May 01 16:27:20 2023
+Stopped: Mon May 01 16:34:50 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 69734.2 kH/s (29.67ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 37141.9 kH/s (56.01ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 15012.7 kH/s (69.47ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4289.5 kH/s (60.76ms) @ Accel:128 Loops:512 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1750 H/s (72.71ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   127.6 MH/s (16.08ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 29969.3 kH/s (69.12ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 89059.9 kH/s (23.22ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  6303.7 kH/s (82.78ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1247.2 kH/s (51.92ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    17856 H/s (56.38ms) @ Accel:512 Loops:500 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:     1081 H/s (13.77ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      583 H/s (87.31ms) @ Accel:512 Loops:512 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1632.7 kH/s (79.91ms) @ Accel:32 Loops:1024 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1635.7 kH/s (79.75ms) @ Accel:32 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      327 H/s (66.22ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      162 H/s (60.54ms) @ Accel:64 Loops:512 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     2072 H/s (40.72ms) @ Accel:64 Loops:511 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      638 H/s (49.61ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:      103 H/s (77.46ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      184 H/s (84.01ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1424 H/s (88.74ms) @ Accel:128 Loops:512 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      259 H/s (81.96ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    11902 H/s (83.56ms) @ Accel:256 Loops:499 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       21 H/s (61.59ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+Started: Mon May 01 16:35:04 2023
+Stopped: Mon May 01 16:41:58 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 74270.1 kH/s (27.92ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 38238.0 kH/s (54.46ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 15171.1 kH/s (68.78ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4358.4 kH/s (59.80ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1774 H/s (71.71ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   133.3 MH/s (15.45ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 30404.5 kH/s (68.27ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 88951.7 kH/s (23.26ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  6355.4 kH/s (82.13ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1242.1 kH/s (52.12ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    18508 H/s (54.23ms) @ Accel:256 Loops:1000 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:     1064 H/s (14.13ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      586 H/s (86.82ms) @ Accel:512 Loops:512 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1643.9 kH/s (79.41ms) @ Accel:128 Loops:256 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1630.0 kH/s (80.00ms) @ Accel:256 Loops:128 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      325 H/s (66.66ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      163 H/s (60.07ms) @ Accel:32 Loops:1024 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     2076 H/s (54.36ms) @ Accel:256 Loops:127 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      643 H/s (49.12ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:      103 H/s (77.41ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      184 H/s (86.60ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1428 H/s (88.41ms) @ Accel:64 Loops:1024 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      260 H/s (81.82ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    11696 H/s (84.51ms) @ Accel:256 Loops:499 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       21 H/s (61.63ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+Started: Mon May 01 16:42:08 2023
+Stopped: Mon May 01 16:49:00 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 74655.4 kH/s (27.80ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 38538.9 kH/s (54.08ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 15222.8 kH/s (68.53ms) @ Accel:256 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4386.1 kH/s (59.48ms) @ Accel:128 Loops:512 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1891 H/s (67.31ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   132.5 MH/s (15.53ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 30152.5 kH/s (68.82ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 89172.6 kH/s (23.21ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  6305.5 kH/s (82.80ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1244.6 kH/s (52.02ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    18450 H/s (54.43ms) @ Accel:256 Loops:1000 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:     1090 H/s (13.80ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      585 H/s (86.89ms) @ Accel:512 Loops:512 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1647.5 kH/s (79.24ms) @ Accel:128 Loops:256 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1645.4 kH/s (79.32ms) @ Accel:64 Loops:512 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      328 H/s (64.76ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      162 H/s (60.40ms) @ Accel:32 Loops:1024 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     2051 H/s (55.01ms) @ Accel:256 Loops:127 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      635 H/s (49.67ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:      100 H/s (79.82ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      183 H/s (86.85ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1437 H/s (88.06ms) @ Accel:128 Loops:512 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      258 H/s (82.46ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    11895 H/s (83.62ms) @ Accel:256 Loops:499 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       21 H/s (61.64ms) @ Accel:512 Loops:128 Thr:1 Vec:2
+
+Started: Mon May 01 16:49:08 2023
+Stopped: Mon May 01 16:55:56 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+-------------------
+* Hash-Mode 0 (MD5)
+-------------------
+
+Speed.#3.........: 74305.2 kH/s (27.97ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------
+* Hash-Mode 100 (SHA1)
+----------------------
+
+Speed.#3.........: 38583.8 kH/s (54.03ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1400 (SHA2-256)
+---------------------------
+
+Speed.#3.........: 15195.9 kH/s (68.69ms) @ Accel:512 Loops:512 Thr:1 Vec:4
+
+---------------------------
+* Hash-Mode 1700 (SHA2-512)
+---------------------------
+
+Speed.#3.........:  4367.8 kH/s (59.68ms) @ Accel:64 Loops:1024 Thr:1 Vec:2
+
+-------------------------------------------------------------
+* Hash-Mode 22000 (WPA-PBKDF2-PMKID+EAPOL) [Iterations: 4095]
+-------------------------------------------------------------
+
+Speed.#3.........:     1775 H/s (71.63ms) @ Accel:512 Loops:256 Thr:1 Vec:4
+
+-----------------------
+* Hash-Mode 1000 (NTLM)
+-----------------------
+
+Speed.#3.........:   132.6 MH/s (15.52ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+---------------------
+* Hash-Mode 3000 (LM)
+---------------------
+
+Speed.#3.........: 30163.1 kH/s (68.81ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 5500 (NetNTLMv1 / NetNTLMv1+ESS)
+--------------------------------------------
+
+Speed.#3.........: 89814.8 kH/s (23.04ms) @ Accel:512 Loops:1024 Thr:1 Vec:4
+
+----------------------------
+* Hash-Mode 5600 (NetNTLMv2)
+----------------------------
+
+Speed.#3.........:  6329.3 kH/s (82.45ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+--------------------------------------------------------
+* Hash-Mode 1500 (descrypt, DES (Unix), Traditional DES)
+--------------------------------------------------------
+
+Speed.#3.........:  1248.1 kH/s (51.88ms) @ Accel:16 Loops:1024 Thr:1 Vec:4
+
+------------------------------------------------------------------------------
+* Hash-Mode 500 (md5crypt, MD5 (Unix), Cisco-IOS $1$ (MD5)) [Iterations: 1000]
+------------------------------------------------------------------------------
+
+Speed.#3.........:    18725 H/s (53.95ms) @ Accel:512 Loops:500 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 3200 (bcrypt) [Iterations: 32]
+----------------------------------------------------------------
+
+Speed.#3.........:     1090 H/s (13.74ms) @ Accel:4 Loops:32 Thr:1 Vec:1
+
+--------------------------------------------------------------------
+* Hash-Mode 1800 (sha512crypt $6$, SHA512 (Unix)) [Iterations: 5000]
+--------------------------------------------------------------------
+
+Speed.#3.........:      580 H/s (87.50ms) @ Accel:512 Loops:512 Thr:1 Vec:2
+
+--------------------------------------------------------
+* Hash-Mode 7500 (Kerberos 5, etype 23, AS-REQ Pre-Auth)
+--------------------------------------------------------
+
+Speed.#3.........:  1647.9 kH/s (79.21ms) @ Accel:64 Loops:512 Thr:1 Vec:4
+
+-------------------------------------------------
+* Hash-Mode 13100 (Kerberos 5, etype 23, TGS-REP)
+-------------------------------------------------
+
+Speed.#3.........:  1626.1 kH/s (80.25ms) @ Accel:128 Loops:256 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15300 (DPAPI masterkey file v1 (context 1 and 2)) [Iterations: 23999]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      326 H/s (65.07ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+---------------------------------------------------------------------------------
+* Hash-Mode 15900 (DPAPI masterkey file v2 (context 1 and 2)) [Iterations: 12899]
+---------------------------------------------------------------------------------
+
+Speed.#3.........:      163 H/s (60.04ms) @ Accel:64 Loops:512 Thr:1 Vec:2
+
+------------------------------------------------------------------
+* Hash-Mode 7100 (macOS v10.8+ (PBKDF2-SHA512)) [Iterations: 1023]
+------------------------------------------------------------------
+
+Speed.#3.........:     1984 H/s (42.47ms) @ Accel:64 Loops:511 Thr:1 Vec:2
+
+---------------------------------------------
+* Hash-Mode 11600 (7-Zip) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:      630 H/s (50.06ms) @ Accel:32 Loops:4096 Thr:1 Vec:4
+
+------------------------------------------------
+* Hash-Mode 12500 (RAR3-hp) [Iterations: 262144]
+------------------------------------------------
+
+Speed.#3.........:      103 H/s (77.54ms) @ Accel:32 Loops:16384 Thr:1 Vec:4
+
+--------------------------------------------
+* Hash-Mode 13000 (RAR5) [Iterations: 32799]
+--------------------------------------------
+
+Speed.#3.........:      182 H/s (87.56ms) @ Accel:256 Loops:512 Thr:1 Vec:4
+
+--------------------------------------------------------------------------------
+* Hash-Mode 6211 (TrueCrypt RIPEMD160 + XTS 512 bit (legacy)) [Iterations: 1999]
+--------------------------------------------------------------------------------
+
+Speed.#3.........:     1417 H/s (89.27ms) @ Accel:64 Loops:1024 Thr:1 Vec:4
+
+-----------------------------------------------------------------------------------
+* Hash-Mode 13400 (KeePass 1 (AES/Twofish) and KeePass 2 (AES)) [Iterations: 24569]
+-----------------------------------------------------------------------------------
+
+Speed.#3.........:      261 H/s (81.42ms) @ Accel:128 Loops:1024 Thr:1 Vec:4
+
+----------------------------------------------------------------
+* Hash-Mode 6800 (LastPass + LastPass sniffed) [Iterations: 499]
+----------------------------------------------------------------
+
+Speed.#3.........:    11623 H/s (57.11ms) @ Accel:512 Loops:249 Thr:1 Vec:4
+
+--------------------------------------------------------------------
+* Hash-Mode 11300 (Bitcoin/Litecoin wallet.dat) [Iterations: 200459]
+--------------------------------------------------------------------
+
+Speed.#3.........:       21 H/s (61.22ms) @ Accel:256 Loops:256 Thr:1 Vec:2
+
+Started: Mon May 01 16:56:20 2023
+Stopped: Mon May 01 17:03:11 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       33 H/s (2.29ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:06:43 2023
+Stopped: Mon May 01 18:07:25 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       41 H/s (2.36ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:07:53 2023
+Stopped: Mon May 01 18:08:04 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       43 H/s (2.27ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:08:18 2023
+Stopped: Mon May 01 18:08:29 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       41 H/s (2.29ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:09:13 2023
+Stopped: Mon May 01 18:09:23 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       42 H/s (2.27ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:09:26 2023
+Stopped: Mon May 01 18:09:37 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       41 H/s (2.29ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:09:55 2023
+Stopped: Mon May 01 18:10:06 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       42 H/s (2.35ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:10:20 2023
+Stopped: Mon May 01 18:10:31 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       42 H/s (2.36ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:10:39 2023
+Stopped: Mon May 01 18:10:50 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       36 H/s (3.09ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:11:25 2023
+Stopped: Mon May 01 18:11:36 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       41 H/s (2.27ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:11:42 2023
+Stopped: Mon May 01 18:11:54 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       41 H/s (2.29ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:12:35 2023
+Stopped: Mon May 01 18:12:46 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       42 H/s (2.28ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:12:49 2023
+Stopped: Mon May 01 18:13:00 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       35 H/s (3.65ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:13:16 2023
+Stopped: Mon May 01 18:13:27 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       34 H/s (2.33ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:13:31 2023
+Stopped: Mon May 01 18:13:42 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b --force --opencl-device-types 1 -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+You have enabled --force to bypass dangerous warnings and errors!
+This can hide serious problems and should only be done when debugging.
+Do not report hashcat issues encountered when using --force.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, skipped
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, 1947/3958 MB (989 MB allocatable), 4MCU
+
+Benchmark relevant options:
+===========================
+* --force
+* --opencl-device-types=1
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       43 H/s (2.37ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:13:47 2023
+Stopped: Mon May 01 18:13:58 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>hashcat -b -m 8900
+hashcat (v6.2.6) starting in benchmark mode
+
+Benchmarking uses hand-optimized kernel code by default.
+You can use it in your cracking session by setting the -O option.
+Note: Using optimized kernel code limits the maximum supported password length.
+To disable the optimized kernel code in benchmark mode, use the -w option.
+
+ADL2_New_QueryPMLogData_Get is missing from ADL shared library.
+
+OpenCL API (OpenCL 2.0 AMD-APP (1800.11)) - Platform #1 [Advanced Micro Devices, Inc.]
+======================================================================================
+* Device #1: AMD Radeon HD 6300M Series, 384/512 MB (192 MB allocatable), 2MCU
+* Device #2: , skipped
+
+OpenCL API (OpenCL 3.0 WINDOWS) - Platform #2 [Intel(R) Corporation]
+====================================================================
+* Device #3: Intel(R) Core(TM) i3 CPU       M 380  @ 2.53GHz, skipped
+
+Benchmark relevant options:
+===========================
+* --optimized-kernel-enable
+
+---------------------------------------------
+* Hash-Mode 8900 (scrypt) [Iterations: 16384]
+---------------------------------------------
+
+Speed.#3.........:       30 H/s (3.37ms) @ Accel:4 Loops:1024 Thr:1 Vec:1
+
+Started: Mon May 01 18:15:33 2023
+Stopped: Mon May 01 18:21:57 2023
+
+C:\Users\user\Desktop\hashcat-6.2.6>
